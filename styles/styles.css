@@ -1,0 +1,18 @@
+.subtitulo--imagem{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 120px;
+}
+.img--logo--header{
+    height: 40px;
+
+}
+#titulo-logo{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
