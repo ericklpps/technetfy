@@ -1,0 +1,26 @@
+#btn-banner{
+    background-color: darkblue
+}
+#btn-banner:hover{
+    background-color: orangered;
+}
+#btn-banner1{
+    background-color: orangered
+}
+#btn-banner1:hover{
+    background-color: darkblue;
+}
+.ancor-btn{
+    text-decoration: none;
+    color: white;
+}
+.botoes-banner{
+    display: flex;
+    justify-content:space-evenly;
+}
+#btn-cabecalho{
+    background-color: darkblue
+}
+#btn-cabecalho:hover{
+    background-color: orangered;
+}

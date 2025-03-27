@@ -1,0 +1,32 @@
+.banner-container{
+    text-align: center;
+}
+.banner-destaque{
+    width: 100%;
+    height: 410px; 
+    background-image: url(/assets/banner-header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px darkblue(0, 0, 0, 0.274); 
+}
+.banner-destaque::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.banner-conteudo{
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 20px;
+}
