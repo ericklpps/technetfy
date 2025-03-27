@@ -1,5 +1,6 @@
 @import url(/styles/banner.css);
 @import url(/styles/btn.css);
+@import url(/styles/servicos.css);
 .subtitulo--imagem{
     display: flex;
     flex-direction: row;

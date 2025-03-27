@@ -1,0 +1,62 @@
+/* Estilo para o contêiner de agrupamento */
+#agrupamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: last baseline;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Estilo para elementos individuais */
+#elemento-individual {
+    border: 1px solid white;
+    border-radius: 8px black;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para cada item de serviço dentro do contêiner de serviços */
+.servicos-conteudo .servico-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para o ícone do serviço dentro do item de serviço */
+.servicos-conteudo .servico-item .servico-icone {
+    background-color: #293462;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a imagem dentro do ícone do serviço */
+.servicos-conteudo .servico-item .servico-icone img {
+    width: 30px;
+    height: auto;
+}
+
+/* Estilo para o título dentro do item de serviço */
+.servicos-conteudo .servico-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: black;
+}
+
+/* Estilo para o parágrafo dentro do item de serviço */
+.servicos-conteudo .servico-item p {
+    color: black;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+.servicos-conteudo{
+    padding: 20px;
+}
