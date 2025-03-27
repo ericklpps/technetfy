@@ -1,26 +1,88 @@
 #btn-banner{
-    background-color: darkblue
-}
-#btn-banner:hover{
-    background-color: orangered;
-}
-#btn-banner1{
-    background-color: orangered
-}
-#btn-banner1:hover{
     background-color: darkblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
 }
+#btn-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: orangered;
+    transition: width 0.4s ease-in-out;
+    z-index: -1;
+}
+#btn-banner:hover::before{
+    width: 100%;
+}
+
+
+#btn-banner1 {
+    background-color: orangered;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+#btn-banner1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0; /* Começa da direita em vez da esquerda */
+    width: 0%;
+    height: 100%;
+    background-color: darkblue;
+    transition: width 0.4s ease-in-out;
+    z-index: -1;
+}
+
+#btn-banner1:hover::before {
+    width: 100%; 
+    left: 0; 
+}
+
 .ancor-btn{
     text-decoration: none;
     color: white;
 }
+
 .botoes-banner{
     display: flex;
     justify-content:space-evenly;
 }
+
+
 #btn-cabecalho{
-    background-color: darkblue
+    background-color: darkblue;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
 }
-#btn-cabecalho:hover{
+#btn-cabecalho::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
     background-color: orangered;
+    transition: width 0.4s ease-in-out;
+    z-index: -1;
+}
+#btn-cabecalho:hover::before{
+    width: 100%;
 }
