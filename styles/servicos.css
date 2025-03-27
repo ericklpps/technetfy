@@ -2,7 +2,6 @@
 #agrupamento {
     display: flex;
     flex-direction: row;
-    justify-content: last baseline;
     align-items: center;
     margin-top: 120px;
     margin-bottom: 120px;
@@ -13,35 +12,33 @@
 /* Estilo para elementos individuais */
 #elemento-individual {
     border: 1px solid white;
-    border-radius: 8px black;
+    border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para cada item de serviço dentro do contêiner de serviços */
-.servicos-conteudo .servico-item {
+.servico-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px;
-}
-
-/* Estilo para o ícone do serviço dentro do item de serviço */
-.servicos-conteudo .servico-item .servico-icone {
-    background-color: #293462;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    padding: 20px;
+    background-color: white;
+    color: black;
 }
 
 /* Estilo para a imagem dentro do ícone do serviço */
-.servicos-conteudo .servico-item .servico-icone img {
-    width: 30px;
-    height: auto;
+.servicos-conteudo .servico-item img {
+    width: 60px;
+    background-color: #293462;
+    height: 60px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    
 }
 
 /* Estilo para o título dentro do item de serviço */
@@ -54,9 +51,19 @@
 /* Estilo para o parágrafo dentro do item de serviço */
 .servicos-conteudo .servico-item p {
     color: black;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.4;
 }
 .servicos-conteudo{
-    padding: 20px;
+    margin: 20px;
+}
+.servico-item:hover {
+    background-color: #293462;
+}
+.servico-item:hover img {
+    background-color: orangered;
+}
+.servico-item:hover h3,
+.servico-item:hover p {
+    color: white;
 }
