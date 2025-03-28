@@ -2,6 +2,7 @@
 @import url(/styles/btn.css);
 @import url(/styles/servicos.css);
 @import url(/styles/about.css);
+@import url(/styles/produtos.css);
 .subtitulo--imagem{
     display: flex;
     flex-direction: row;

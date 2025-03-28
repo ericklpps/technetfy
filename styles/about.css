@@ -7,23 +7,26 @@
     height: 150vh;
     display: flex;
     justify-content: space-around;
-    background-color: aqua;
 }
 .texto-about-us{
     width: 45%;
-    background-color: red;
-    font-size: 20px;
+    font-size: 17px;    
 
     #title{
         float: left;
+        color: darkblue;
     }
     hr{
-        margin-top: 15px;
+        margin-top: 20px;
+        margin-right: 420px;
+        margin-left: 20px;
+        border-width: 3px;
+        border-radius: 7px;
     }
+
 }
 .container-imagem-about-us{
     width: 55%;
-    background-color: aliceblue;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -33,8 +36,18 @@
     position: absolute;
     width: 400px;
     z-index: 1;
+    animation: subirDescer 3s infinite alternate;
+    border-radius: 7px;
 }
 .quadrado{
     width: 430px;
     transform: rotate(45deg);
 }
+@keyframes subirDescer {
+    0% {
+      transform: translateY(0); 
+    }
+    100% {
+      transform: translateY(-50px); 
+    }
+  }
