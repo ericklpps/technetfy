@@ -1,13 +1,22 @@
-/*.team{
+#team{
+    background-color: white;
+    padding: 20px;
+}
+.team-titulo{
     background-color: white;
     text-align: center;
     color: black;
     padding: 10px;
 }
-
-.team-titulo{
-    background-color: orangered;
+.team-titulo h2{
+    margin-top: 15px; 
     text-align: center;
-    color: white;
-    padding: 10px;
-}*/
+    clear: both; 
+}
+.team-subtitulo{
+    display: inline-block; 
+    margin: 0 10px 0 0; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    vertical-align: middle; 
+}

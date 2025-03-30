@@ -3,6 +3,8 @@
 @import url(/styles/servicos.css);
 @import url(/styles/about.css);
 @import url(/styles/produtos.css);
+@import url(/styles/team.css);
+@import url(/styles/casestudy.css);
 .subtitulo--imagem{
     display: flex;
     flex-direction: row;
