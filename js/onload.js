@@ -259,7 +259,7 @@ window.onload = function() {
             <div class="features-case-container">
                 <div class="container text-center">
                     <div class="row" id="features-case-list">
-                        <div class="col" id="features-case-list-item">
+                        <div class="col">
                             <div class="features-case-list-item-number">
                                 <h5>
                                     1

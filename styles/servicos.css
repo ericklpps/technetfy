@@ -1,4 +1,3 @@
-/* Estilo para o contêiner de agrupamento */
 #agrupamento {
     display: flex;
     flex-direction: row;
@@ -9,14 +8,12 @@
     margin-right: 100px;
 }
 
-/* Estilo para elementos individuais */
 #elemento-individual {
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para cada item de serviço dentro do contêiner de serviços */
 .servico-item {
     display: flex;
     flex-direction: column;
@@ -27,7 +24,6 @@
     color: black;
 }
 
-/* Estilo para a imagem dentro do ícone do serviço */
 .servicos-conteudo .servico-item img {
     width: 60px;
     background-color: #293462;
@@ -41,14 +37,12 @@
     
 }
 
-/* Estilo para o título dentro do item de serviço */
 .servicos-conteudo .servico-item h3 {
     margin-top: 0;
     margin-bottom: 5px;
     color: black;
 }
 
-/* Estilo para o parágrafo dentro do item de serviço */
 .servicos-conteudo .servico-item p {
     color: black;
     font-size: 1em;
