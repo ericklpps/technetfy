@@ -1,7 +1,11 @@
+#container-clientes{
+    padding:70px;
+}
 #container-ratings-row {
     text-align: left;
     width: auto;
     gap: 20px;
+    padding: 40px;
 }
 #container-ratings {
     padding-left: 40px;
