@@ -255,6 +255,6 @@ window.onload = function() {
         }
         
         // Iniciar o carrossel
-        setInterval(moveToNextSlide, 3000);
+        setInterval(moveToNextSlide, 1500);
     }
 };
