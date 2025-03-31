@@ -1,0 +1,22 @@
+.carrossel-case-study{
+    width: 80%; 
+    margin: 20px auto; 
+    overflow: hidden; 
+    border-radius: 10px;
+}
+.carrossel-slide{
+    display: flex; 
+    transform: translateX(0); 
+    transition: transform 0.3s;
+    gap: 20px;
+}
+.carrossel-slide img {
+    width: 250px; 
+    height: 350px; 
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-100%); } 
+}

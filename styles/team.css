@@ -1,6 +1,7 @@
 #team{
     background-color: white;
     padding: 20px;
+    padding-bottom: 70px;
 }
 .team-titulo{
     background-color: white;
@@ -41,8 +42,8 @@
 .team-card-info{
     border-radius: 10px 10px 40px 40px; 
     width: 90%; 
-    padding: 20px 20px 40px 20px; 
-    bottom: 20px; 
+    padding: 5px 5px 10px 5px; 
+    bottom: 10px; 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 .team-card-info-cargo{

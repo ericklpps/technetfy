@@ -207,6 +207,55 @@ window.onload = function() {
             </div>
       `;
     };
-};
 
-  
+    const carouselContainer = document.querySelector('.carrossel-case-study');
+const carouselSlide = document.querySelector('.carrossel-slide');
+const images = document.querySelectorAll('.carrossel-slide img');
+
+if (carouselSlide && images.length > 0) {
+    // Limpar quaisquer clones existentes
+    document.querySelectorAll('[data-clone="true"]').forEach(el => el.remove());
+    
+    // Obter as imagens originais
+    const originalImages = Array.from(images);
+    
+    // Clonar todo o conjunto de imagens e adicionar ao final
+    originalImages.forEach(img => {
+        const clone = img.cloneNode(true);
+        clone.setAttribute('data-clone', 'true');
+        carouselSlide.appendChild(clone);
+    });
+    
+    // Obter a largura real de uma imagem incluindo o gap
+    const gap = 20; // Mesmo valor do CSS
+    const imageWidth = originalImages[0].offsetWidth + gap;
+    const totalImages = originalImages.length;
+    
+    let currentIndex = 0;
+    
+    function moveToNextSlide() {
+        currentIndex++;
+        carouselSlide.style.transition = 'transform 0.5s ease';
+        carouselSlide.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+        
+        // Se chegamos ao final do primeiro conjunto, resetamos para o início
+        if (currentIndex >= totalImages) {
+            setTimeout(() => {
+                carouselSlide.style.transition = 'none';
+                currentIndex = 0;
+                carouselSlide.style.transform = `translateX(0)`;
+                
+                // Forçar reflow
+                void carouselSlide.offsetHeight;
+                
+                // Restaurar transição para o próximo movimento
+                carouselSlide.style.transition = 'transform 0.5s ease';
+            }, 500); // Tempo igual à duração da transição
+        }
+    }
+    
+    // Iniciar o carrossel
+    setInterval(moveToNextSlide, 3000);
+}
+
+};
