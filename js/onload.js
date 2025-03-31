@@ -208,53 +208,137 @@ window.onload = function() {
       `;
     };
 
-    const carouselContainer = document.querySelector('.carrossel-case-study');
     const carouselSlide = document.querySelector('.carrossel-slide');
-    const slideItems = document.querySelectorAll('.carrossel-slide .slide-item'); // Alterado para selecionar slide-item
-    
+    const slideItems = document.querySelectorAll('.carrossel-slide .slide-item');
+
     if (carouselSlide && slideItems.length > 0) {
-        // Limpar quaisquer clones existentes
-        document.querySelectorAll('[data-clone="true"]').forEach(el => el.remove());
+        // Configurações básicas
+        const gap = 20;
+        const itemWidth = slideItems[0].offsetWidth + gap;
+        const totalItems = slideItems.length;
         
-        // Obter os itens originais
-        const originalItems = Array.from(slideItems);
+        // Clonar o primeiro item e adicionar ao final para o loop
+        const firstItemClone = slideItems[0].cloneNode(true);
+        carouselSlide.appendChild(firstItemClone);
         
-        // Clonar todo o conjunto de itens e adicionar ao final
-        originalItems.forEach(item => {
-            const clone = item.cloneNode(true);
-            clone.setAttribute('data-clone', 'true');
-            carouselSlide.appendChild(clone);
-        });
+        // Variáveis de controle
+        let position = 0;
         
-        // Obter a largura real de um item incluindo o gap
-        const gap = 20; // Mesmo valor do CSS
-        const itemWidth = originalItems[0].offsetWidth + gap;
-        const totalItems = originalItems.length;
-        
-        let currentIndex = 0;
-        
-        function moveToNextSlide() {
-            currentIndex++;
-            carouselSlide.style.transition = 'transform 0.5s ease';
-            carouselSlide.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        // Função para mover o carrossel
+        function moveCarousel() {
+            // Avançar para o próximo slide
+            position++;
             
-            // Se chegamos ao final do primeiro conjunto, resetamos para o início
-            if (currentIndex >= totalItems) {
+            // Aplicar a transição
+            carouselSlide.style.transition = 'transform 0.5s ease';
+            carouselSlide.style.transform = `translateX(-${position * itemWidth}px)`;
+            
+            // Resetar quando chegar ao final
+            if (position >= totalItems) {
+                // Após a transição terminar, voltar para o início sem animação
                 setTimeout(() => {
                     carouselSlide.style.transition = 'none';
-                    currentIndex = 0;
-                    carouselSlide.style.transform = `translateX(0)`;
-                    
-                    // Forçar reflow
-                    void carouselSlide.offsetHeight;
-                    
-                    // Restaurar transição para o próximo movimento
-                    carouselSlide.style.transition = 'transform 0.5s ease';
-                }, 500); // Tempo igual à duração da transição
+                    position = 0;
+                    carouselSlide.style.transform = 'translateX(0)';
+                }, 500);
             }
         }
         
-        // Iniciar o carrossel
-        setInterval(moveToNextSlide, 1500);
-    }
+        // Iniciar o carrossel com intervalo
+        setInterval(moveCarousel, 1500);
+    };
+    if (document.getElementById('features-case')) {
+        document.getElementById('features-case').innerHTML = `
+            <div class="team-titulo">
+                <p class="team-subtitulo">Features Case</p>
+                <hr class="linha-produtos">
+            <div>
+                <h2>Our Working Process</h2>  
+            </div>            
+            </div>
+            <div class="features-case-container">
+                <div class="container text-center">
+                    <div class="row" id="features-case-list">
+                        <div class="col" id="features-case-list-item">
+                            <div class="features-case-list-item-number">
+                                <h5>
+                                    1
+                                </h5>
+                            </div>
+                            <div class="features-case-list-item-title">
+                                <h4>
+                                    Discover
+                                </h4>
+                            </div>
+                            <div class="features-case-list-item-description">
+                                <p>
+                                    We ask questions to 
+                                    understand your unique business needs and 
+                                    give you a chance to get to know us and how we can help you.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="features-case-list-item-number">
+                                <h5>
+                                    2
+                                </h5>
+                            </div>
+                            <div>
+                                <h4 class="features-case-list-item-title">
+                                    Access
+                                </h4>
+                            </div>
+                            <div class="features-case-list-item-description">
+                                <p>
+                                    An IT specialist will make an on-site 
+                                    visit to review all IT hardware, overall security, 
+                                    and logical structure of your network.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="features-case-list-item-number">
+                                <h5>
+                                    3
+                                </h5>
+                            </div>
+                            <div class="features-case-list-item-title">
+                                <h4>
+                                    Advise
+                                </h4>
+                            </div>
+                            <div class="features-case-list-item-description">
+                                <p>
+                                    Our team will collect 
+                                    and review all relevant information, 
+                                    then present to you a comprehensive plan for the future.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="features-case-list-item-number">
+                                <h5>
+                                    4
+                                </h5>
+                            </div>
+                            <div>
+                                <h4 class="features-case-list-item-title">
+                                    Discover
+                                </h4>
+                            </div>
+                            <div class="features-case-list-item-description">
+                                <p>
+                                    Once we get your approval, the team will implement the 
+                                    agreed upon solution and measure the results. 
+                                    From there, we will make new recommendations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        };
+
 };

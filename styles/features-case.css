@@ -1,0 +1,21 @@
+#features-case-list{
+    text-align: left;
+}
+.features-case-list-item-number h5{
+    width: 60px;
+    background-color: #293462;
+    color: white;
+    height: 60px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.features-case-list-item-number{
+    margin-bottom: 50px;
+}
+.features-case-container{
+    padding-top: 20px;
+    padding-bottom: 70px
+}

@@ -5,6 +5,8 @@
 @import url(/styles/produtos.css);
 @import url(/styles/team.css);
 @import url(/styles/carrossel.css);
+@import url(/styles/features-case.css);
+
 .subtitulo--imagem{
     display: flex;
     flex-direction: row;
