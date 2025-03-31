@@ -1,5 +1,4 @@
 window.onload = function() {
-    // Preencher o container de produtos
     if (document.getElementById('container-produtos')) {
         document.getElementById('container-produtos').innerHTML = `
             <div class="produtos-titulo">
@@ -118,5 +117,96 @@ window.onload = function() {
         </div>
       </section>
         `;
-    }
+    };
+    if (document.getElementById('team')) {
+      document.getElementById('team').innerHTML =`
+        <div class="team-titulo">
+                <p class="team-subtitulo">Team Member</p>
+                <hr class="linha-produtos">
+            <div>
+                <h2>Meet Our Team</h2>  
+            </div>            
+            </div>
+            <div class="team-container row"> <!--width pré definido numa variavel global-->
+                <div class="team-card col">
+                    <div class="team-card-image container text-center">
+                        <img src="assets/Team/team1.jpg" alt="Team Member 1" class="img-fluid">
+                    </div>
+                    <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <h3>John Smith</h3>
+                        <p class="team-card-info-cargo">Marketing Manager</p>
+                        <div class="team-card-social-icons container text-center ">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/Team/facebook.svg" alt="Facebook Icon" class="img-fluid" id="img-icon">
+                                    <img src="assets/Team/twitter-x.svg" alt="Twitter Icon" class="img-fluid" id="img-icon">
+                                    <img src="assets/Team/linkedin.svg" alt="LinkedIn Icon" class="img-fluid" id="img-icon">
+                                    <img src="assets/Team/instagram.svg" alt="Instagram Icon" class="img-fluid" id="img-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card col">
+                    <div class="team-card-image container text-center">
+                        <img src="assets/Team/team2.jpg" alt="Team Member 2" class="img-fluid">
+                    </div>
+                    <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <h3>David Nguyen</h3>
+                        <p class="team-card-info-cargo">Software Engineer</p>
+                        <div class="team-card-social-icons container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/Team/facebook.svg" alt="Facebook Icon" class="img-fluid">
+                                    <img src="assets/Team/twitter-x.svg" alt="Twitter Icon" class="img-fluid">
+                                    <img src="assets/Team/linkedin.svg" alt="LinkedIn Icon" class="img-fluid">
+                                    <img src="assets/Team/instagram.svg" alt="Instagram Icon" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card col">
+                    <div class="team-card-image container text-center">
+                        <img src="assets/Team/team3.jpg" alt="Team Member 2" class="img-fluid">
+                    </div>
+                    <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <h3>Sarah Lee</h3>
+                        <p class="team-card-info-cargo">Product Designer</p>
+                        <div class="team-card-social-icons container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/Team/facebook.svg" alt="Facebook Icon" class="img-fluid">
+                                    <img src="assets/Team/twitter-x.svg" alt="Twitter Icon" class="img-fluid">
+                                    <img src="assets/Team/linkedin.svg" alt="LinkedIn Icon" class="img-fluid">
+                                    <img src="assets/Team/instagram.svg" alt="Instagram Icon" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card col">
+                    <div class="team-card-image container text-center ">
+                        <img src="assets/Team/team4.jpg" alt="Team Member 2" class="img-fluid">
+                    </div>
+                    <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <h3>Emily Chen</h3>
+                        <p class="team-card-info-cargo">Customer Support Specialist</p>
+                        <div class="team-card-social-icons container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/Team/facebook.svg" alt="Facebook Icon" class="img-fluid">
+                                    <img src="assets/Team/twitter-x.svg" alt="Twitter Icon" class="img-fluid">
+                                    <img src="assets/Team/linkedin.svg" alt="LinkedIn Icon" class="img-fluid">
+                                    <img src="assets/Team/instagram.svg" alt="Instagram Icon" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      `;
+    };
 };
+
+  
