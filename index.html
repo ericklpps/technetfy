@@ -184,17 +184,30 @@
             <!--Clients sendo renderizado pelo onload.js-->
         </section>
         <section id="feed">
-            <div class="feed-titulo">
-                <p class="feed-subtitulo">Blog</p>
-                <hr class="linha-produtos">
-            <div>
-                <h2>Read Our Latest News Feed</h2>
-            </div>
-            <div>
-                <button type="button" class="btn btn-secondary" id="btn-cabecalho">See All Blogs</button>
-            </div>            
-            </div>
-            
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-md-auto">
+                    <div>
+                      <p class="mb-0 small feed-subtitulo">Blog</p>
+                      <hr class="mt-1 mb-2 border-primary w-25 linha-produtos">
+                    </div>
+                    <h2 class="feed-titulo">Read Our Latest News Feed</h2>
+                  </div>
+                  <div class="col-md-auto">
+                    <button type="button" class="btn btn-primary" id="btn-cabecalho">See All Blogs</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="row"> <!--alinha os cards em linha-->
+                    <div class="col feed-card"> <!--card em col para ser representado-->
+                        <div class="row feed-calendar"><!--Definindo o calendario numa row para alinhar seus elementos-->
+                            <div class="col feed-calendar-data">
+                                <img >
+                            </div>
+                        </div>
+                    </div>
+              </div>
         </section>
     </main>
     <script src="/js/header.js"></script>
