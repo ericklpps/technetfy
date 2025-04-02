@@ -9,6 +9,7 @@
 @import url(/styles/ratings.css);
 @import url(/styles/feed.css);
 @import url(/styles/banner2.css);
+@import url(/styles/footer.css);
 
 .subtitulo--imagem{
     display: flex;
