@@ -8,6 +8,7 @@
 @import url(/styles/features-case.css);
 @import url(/styles/ratings.css);
 @import url(/styles/feed.css);
+@import url(/styles/banner2.css);
 
 .subtitulo--imagem{
     display: flex;

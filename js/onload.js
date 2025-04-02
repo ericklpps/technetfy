@@ -342,7 +342,7 @@ window.onload = function() {
         };
         if (document.getElementById('container-clients')) {
             document.getElementById('container-clients').innerHTML =`
-            <div class="team-titulo">
+            <div class="team-titulo py-5">
                 <p class="team-subtitulo">Testimonial </p>
                 <hr class="linha-produtos">
             <div>
@@ -434,6 +434,89 @@ window.onload = function() {
                     </div>
                 </div>
               </div>
+            `;
+        };
+        if (document.getElementById('feed')) {
+            document.getElementById('feed').innerHTML =`
+            <div class="row mx-auto px-5">
+                <div class="col-12 px-3 py-5">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-auto">
+                            <div>
+                                <p class="mb-0 small feed-subtitulo">Blog</p>
+                                <hr class="mt-1 mb-2 border-primary w-25 linha-produtos">
+                            </div>
+                            <h2 class="feed-titulo">Read Our Latest News Feed</h2>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="button" class="btn btn-primary" id="btn-cabecalho">See All Blogs</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header fs-s d-flex justify-content-between align-items-center" id="feed-card-header">
+                            <div class="d-flex align-items-center gap-2" id="feed-card-header">
+                                <img alt="calendario" src="/assets/Feed/calendar3.svg" style="width: 16px; height: 16px;">
+                                <p class="mb-0 small">20th March 2024</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <img alt="Balão de conversa" src="/assets/Feed/chat.svg" style="width: 16px; height: 16px;">
+                                <p class="mb-0 small">10 comments</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img alt="Imagem Pessoas" src="/assets/Feed/blog-1.jpg" class="img-fluid mb-3">
+                            <h5 class="card-title pe-3 ps-3">Why startup turn to Jenny for their websites.</h5>
+                            <p class="card-text pe-3 ps-3">Matie boy owt to do with bevvy blok haggle nice one starkers give us.</p>
+                            <a href="#" class="pe-3 ps-3 read-more">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header fs-s d-flex justify-content-between align-items-center" id="feed-card-header">
+                            <div class="d-flex align-items-center gap-2">
+                                <img alt="calendario" src="/assets/Feed/calendar3.svg" style="width: 16px; height: 16px;">
+                                <p class="mb-0 small">20th March 2024</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <img alt="Balão de conversa" src="/assets/Feed/chat.svg" style="width: 16px; height: 16px;">
+                                <p class="mb-0 small">10 comments</p>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <img alt="Imagem Pessoas" src="/assets/Feed/blog-2.png" class="img-fluid mb-3">
+                            <h5 class="card-title pe-3 ps-3">How to organize your article links with Jenny</h5>
+                            <p class="card-text pe-3 ps-3">Matie boy owt to do with bevvy blok haggle nice one starkers give us.</p>
+                            <a href="#" class="pe-3 ps-3 read-more">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-header fs-s d-flex justify-content-between align-items-center" id="feed-card-header">
+                            <div class="d-flex align-items-center gap-2 ">
+                                <img alt="calendario" src="/assets/Feed/calendar3.svg" style="width: 16px; height: 16px;">
+                                <p class="mb-0 small">20th March 2024</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <img alt="Balão de conversa" src="/assets/Feed/chat.svg" style="width: 16px; height: 16px;">
+                                <p class="mb-0 small">10 comments</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img alt="Imagem Pessoas" src="/assets/Feed/blog-3.png" class="img-fluid mb-3">
+                            <h5 class="card-title pe-3 ps-3">In house Design Thinking How I deal with it?</h5>
+                            <p class="card-text pe-3 ps-3">Matie boy owt to do with bevvy blok haggle nice one starkers give us.</p>
+                            <a href="#" class="pe-3 ps-3 read-more">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             `;
         };
 };

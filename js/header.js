@@ -30,7 +30,7 @@ function criarHeader() {
                 <li class="nav-item"><a class="nav-link text-white" href="#">It Solution</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-                <li class="nav-item"><button type="button" class="btn btn-secondary" id="btn-cabecalho">Get Started</button></li>
+                <li class="nav-item ps-2"><button type="button" class="btn btn-secondary" id="btn-cabecalho">Get Started</button></li>
               </ul>
             </div>
           </div>
