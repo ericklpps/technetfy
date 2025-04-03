@@ -1,0 +1,20 @@
+.navbar {
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .navbar.bg-primary {
+    background-color: darkblue !important; 
+  }
+  
+  .navbar.scrolled {
+    background-color: white !important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .navbar.scrolled .nav-link,
+  .navbar.scrolled #titulo-logo {
+    color: black !important;
+  }
+  
+ 
+  

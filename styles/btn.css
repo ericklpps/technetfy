@@ -1,5 +1,5 @@
 #btn-banner{
-    background-color: darkblue;
+    background-color: #0e0650;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
@@ -41,7 +41,7 @@
     right: 0; /* Começa da direita em vez da esquerda */
     width: 0%;
     height: 100%;
-    background-color: darkblue;
+    background-color: #0e0650;
     transition: width 0.4s ease-in-out;
     z-index: -1;
 }
@@ -63,7 +63,7 @@
 
 
 #btn-cabecalho{
-    background-color: darkblue;
+    background-color: #0e0650;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 17px;

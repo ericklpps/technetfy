@@ -1,5 +1,5 @@
 #footer {
-    background-color: darkgray;
+    background-color: #0e1b29;
 }
 
 .texto-footer {
@@ -33,4 +33,29 @@
 
 .ms-2 { 
     margin-left: 0.5rem;
+}
+
+.footer-contact svg {
+    width: 24px; 
+    height: 24px;
+    fill: white; 
+}
+.contact-services{
+    color: white;
+    text-decoration: none;
+}
+.generica-receber-hover{
+    color: white;
+    text-decoration: none;
+}
+.generica-receber-hover:hover{
+    color: orangered;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: translateX(10px);
+    svg{
+        fill: orangered;
+        transition: fill 0.3s ease, transform 0.3s ease;
+        transform: translateX(10px);
+    }
 }

@@ -1,3 +1,4 @@
+@import url(/styles/header.css);
 @import url(/styles/banner.css);
 @import url(/styles/btn.css);
 @import url(/styles/servicos.css);
@@ -29,10 +30,7 @@
     flex-direction: row;
     align-items: baseline;
 }
-#container-banner2{
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
+
 #sombreamento-div{
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     padding-right: 10px;

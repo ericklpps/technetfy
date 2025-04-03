@@ -519,4 +519,53 @@ window.onload = function() {
             </div>
             `;
         };
+        if (document.getElementById('container-banner2')) {
+            document.getElementById('container-banner2').innerHTML =`
+            <div class="row text-center w-100 justify-content-center g-4">
+                <div class="col-md-3 col-sm-6 px-5">
+                    <div class="card border border-secondary border-2 bg-transparent text-white py-5 px">
+                        <div class="d-flex justify-content-center align-items-center bg-primary rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                            <img src="./assets/Banner-dois/chat-dots.svg" alt="Balão de chat" style="width: 40%; height: 40%;">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title mb-0 display-2">280</h2>
+                            <p class="card-text small">Our Branchs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 px-5 py-5">
+                    <div class="card border border-secondary border-2 bg-transparent text-white py-5">
+                        <div class="d-flex justify-content-center align-items-center bg-light rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                            <img src="./assets/Banner-dois/chat-dots.svg" alt="Balão de chat" style="width: 40%; height: 40%;">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title mb-0 display-2">782</h2>
+                            <p class="card-text small">Projects Done</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 px-5">
+                    <div class="card border border-secondary border-2 bg-transparent text-white py-5">
+                        <div class="d-flex justify-content-center align-items-center bg-danger rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                            <img src="./assets/Banner-dois/chat-dots.svg" alt="Balão de chat" style="width: 40%; height: 40%;" fill="white">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title mb-0 display-2">1M</h2>
+                            <p class="card-text small">Happy Users</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 px-5 py-5">
+                    <div class="card border border-secondary border-2 bg-transparent text-white py-5 px">
+                        <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                            <img src="./assets/Banner-dois/chat-dots.svg" alt="Balão de chat" style="width: 40%; height: 40%;">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title mb-0 display-2 ">100</h2>
+                            <p class="card-text small">Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `};
 };

@@ -1,11 +1,11 @@
 .produtos{
-    background-color: darkblue;
+    background-color: #0e0650;
     padding: 20px;
     
 }
 
 .produtos-titulo{
-    background-color: darkblue;
+    background-color: #0e0650;
     text-align: center;
     color: white;
     padding: 10px;
@@ -42,7 +42,7 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    background-color: darkblue;
+    background-color: #0e0650;
     color: white;
     border: 1px;
     border-color: gray;
