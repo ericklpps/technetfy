@@ -44,7 +44,7 @@
     width: 90%; 
     padding: 5px 5px 10px 5px; 
     bottom: 10px; 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 .team-card-info-cargo{
     color: darkblue;
@@ -57,11 +57,11 @@
     transition: transform 0.3s ease-in-out;
 }
 .team-card:hover .team-card-image img {
-    transform: scale(1.05) translateY(-10px);
+    transform: scale(1.05) translateY(-20px);
 }
 .team-card:hover .team-card-info {
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-20px); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 .cor-svg-team svg{
     fill: darkblue;

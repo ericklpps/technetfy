@@ -34,15 +34,22 @@ function criarHeader() {
                   Company
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#">Team Details</a></li>
+                  <li><a class="dropdown-item" href="#">Whay Choose Us</a></li>
+                  <li><a class="dropdown-item" href="#">Case Study</a></li>
+                  <li><a class="dropdown-item" href="#">Case Study Details</a></li>
+                  <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                  <li><a class="dropdown-item" href="#">Pricing</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                  <li><a class="dropdown-item" href="#">Error</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-white" href="#">Service</a></li>
               <li class="nav-item"><a class="nav-link text-white" href="#">IT Solution</a></li>
               <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
               <li class="nav-item ps-2">
                 <button type="button" class="btn btn-secondary" id="btn-cabecalho">Get Started</button>
               </li>
