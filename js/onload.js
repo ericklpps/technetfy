@@ -75,136 +75,175 @@ window.onload = function() {
         
     }
     
-    // Preencher o container de serviços
     if (document.getElementById('servicos-container')) {
         document.getElementById('servicos-container').innerHTML = `
-            <section class="container-servicos"> <!--Container-->
-        <div id="agrupamento" class="servicos"> <!--agrupamento dos 4 elementos-->
-          
-          <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
-            <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
-              <img src="/assets/escudo-de-seguranca.svg" alt="Escudo de segurança">
-              <h3>Security</h3>
-              <p>Keep your data secure with our top-of-the-line security features.</p>
+        <section class="container-servicos"> <!--Container-->
+            <div id="agrupamento" class="servicos"> <!--agrupamento dos 4 elementos-->
+            
+            <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
+                <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-shaded" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 14.933a1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+                    </svg>          
+                    <h3>Security</h3>
+                <p>Keep your data secure with our top-of-the-line security features.</p>
+                </div>
+            </div> <!--Aqui acaba um elemento-->
+            
+            <!--Aqui inicia um novo elemento-->
+            <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
+                <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
+                        <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                <h3>Scalability</h3>
+                <p>As your business grows, so do your IT needs. Our solution is designed to scale with you </p>
+                </div>
+            </div> <!--Aqui acaba um elemento-->
+            
+            <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
+                <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                <h3>Reliability</h3>
+                <p>Downtime is not an option. Our solution is built to deliver maximum uptime and reliability</p>
+                </div>
+            </div> <!--Aqui acaba um elemento-->
+            
+            <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
+                <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                    </svg>
+                <h3>Ease of Use</h3>
+                <p>Our intuitive interface makes it easy to manage your IT infrastructure, even if you're not a tech expert.</p>
+                </div>
+            </div> <!--Aqui acaba um elemento-->
+            
             </div>
-          </div> <!--Aqui acaba um elemento-->
-          
-          <!--Aqui inicia um novo elemento-->
-          <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
-            <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
-              <img src="/assets/balancas.svg" alt="Balança">
-              <h3>Scalability</h3>
-              <p>As your business grows, so do your IT needs. Our solution is designed to scale with you </p>
-            </div>
-          </div> <!--Aqui acaba um elemento-->
-          
-          <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
-            <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
-              <img src="/assets/coracao.svg" alt="Coração">
-              <h3>Reliability</h3>
-              <p>Downtime is not an option. Our solution is built to deliver maximum uptime and reliability</p>
-            </div>
-          </div> <!--Aqui acaba um elemento-->
-          
-          <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
-            <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
-              <img src="/assets/pessoas.svg" alt="Pessoas">
-              <h3>Ease of Use</h3>
-              <p>Our intuitive interface makes it easy to manage your IT infrastructure, even if you're not a tech expert.</p>
-            </div>
-          </div> <!--Aqui acaba um elemento-->
-          
-        </div>
-      </section>
+        </section>
         `;
     };
     if (document.getElementById('team')) {
       document.getElementById('team').innerHTML =`
         <div class="team-titulo">
-                <p class="team-subtitulo">Team Member</p>
-                <hr class="linha-produtos">
-            <div>
-                <h2>Meet Our Team</h2>  
-            </div>            
-            </div>
-            <div class="team-container row"> <!--width pré definido numa variavel global-->
-                <div class="team-card col">
-                    <div class="team-card-image container text-center">
-                        <img src="assets/Team/team1.jpg" alt="Team Member 1" class="img-fluid">
-                    </div>
-                    <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <h3>John Smith</h3>
-                        <p class="team-card-info-cargo">Marketing Manager</p>
-                        <div class="team-card-social-icons container text-center ">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/Team/facebook.svg" alt="Facebook Icon" class="img-fluid" id="img-icon">
-                                    <img src="assets/Team/twitter-x.svg" alt="Twitter Icon" class="img-fluid" id="img-icon">
-                                    <img src="assets/Team/linkedin.svg" alt="LinkedIn Icon" class="img-fluid" id="img-icon">
-                                    <img src="assets/Team/instagram.svg" alt="Instagram Icon" class="img-fluid" id="img-icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <p class="team-subtitulo">Team Member</p>
+            <hr class="linha-produtos">
+        <div>
+            <h2>Meet Our Team</h2>  
+        </div>            
+        </div>
+        <div class="team-container row"> <!--width pré definido numa variavel global-->
+            <div class="team-card col">
+                <div class="team-card-image container text-center">
+                    <img src="assets/Team/team1.jpg" alt="Team Member 1" class="img-fluid">
                 </div>
-                <div class="team-card col">
-                    <div class="team-card-image container text-center">
-                        <img src="assets/Team/team2.jpg" alt="Team Member 2" class="img-fluid">
-                    </div>
-                    <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <h3>David Nguyen</h3>
-                        <p class="team-card-info-cargo">Software Engineer</p>
-                        <div class="team-card-social-icons container text-center">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/Team/facebook.svg" alt="Facebook Icon" class="img-fluid">
-                                    <img src="assets/Team/twitter-x.svg" alt="Twitter Icon" class="img-fluid">
-                                    <img src="assets/Team/linkedin.svg" alt="LinkedIn Icon" class="img-fluid">
-                                    <img src="assets/Team/instagram.svg" alt="Instagram Icon" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-card col">
-                    <div class="team-card-image container text-center">
-                        <img src="assets/Team/team3.jpg" alt="Team Member 2" class="img-fluid">
-                    </div>
-                    <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <h3>Sarah Lee</h3>
-                        <p class="team-card-info-cargo">Product Designer</p>
-                        <div class="team-card-social-icons container text-center">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/Team/facebook.svg" alt="Facebook Icon" class="img-fluid">
-                                    <img src="assets/Team/twitter-x.svg" alt="Twitter Icon" class="img-fluid">
-                                    <img src="assets/Team/linkedin.svg" alt="LinkedIn Icon" class="img-fluid">
-                                    <img src="assets/Team/instagram.svg" alt="Instagram Icon" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-card col">
-                    <div class="team-card-image container text-center ">
-                        <img src="assets/Team/team4.jpg" alt="Team Member 2" class="img-fluid">
-                    </div>
-                    <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
-                        <h3>Emily Chen</h3>
-                        <p class="team-card-info-cargo">Customer Support Specialist</p>
-                        <div class="team-card-social-icons container text-center">
-                            <div class="row">
-                                <div class="col">
-                                    <img src="assets/Team/facebook.svg" alt="Facebook Icon" class="img-fluid">
-                                    <img src="assets/Team/twitter-x.svg" alt="Twitter Icon" class="img-fluid">
-                                    <img src="assets/Team/linkedin.svg" alt="LinkedIn Icon" class="img-fluid">
-                                    <img src="assets/Team/instagram.svg" alt="Instagram Icon" class="img-fluid">
-                                </div>
+                <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <h3>John Smith</h3>
+                    <p class="team-card-info-cargo">Marketing Manager</p>
+                    <div class="team-card-social-icons container text-center ">
+                        <div class="row">
+                            <div class="col cor-svg-team">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                </svg>                        
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>                        
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="team-card col">
+                <div class="team-card-image container text-center">
+                    <img src="assets/Team/team2.jpg" alt="Team Member 2" class="img-fluid">
+                </div>
+                <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <h3>David Nguyen</h3>
+                    <p class="team-card-info-cargo">Software Engineer</p>
+                    <div class="team-card-social-icons container text-center">
+                        <div class="row">
+                            <div class="col cor-svg-team">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                </svg>                        
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>                        
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card col">
+                <div class="team-card-image container text-center">
+                    <img src="assets/Team/team3.jpg" alt="Team Member 2" class="img-fluid">
+                </div>
+                <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <h3>Sarah Lee</h3>
+                    <p class="team-card-info-cargo">Product Designer</p>
+                    <div class="team-card-social-icons container text-center">
+                        <div class="row">
+                            <div class="col cor-svg-team">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                </svg>                        
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>                        
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card col">
+                <div class="team-card-image container text-center ">
+                    <img src="assets/Team/team4.jpg" alt="Team Member 2" class="img-fluid">
+                </div>
+                <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+                    <h3>Emily Chen</h3>
+                    <p class="team-card-info-cargo">Customer Support Specialist</p>
+                    <div class="team-card-social-icons container text-center">
+                        <div class="row">
+                            <div class="col cor-svg-team">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                </svg>                        
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>                        
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       `;
     };
 
@@ -212,30 +251,22 @@ window.onload = function() {
     const slideItems = document.querySelectorAll('.carrossel-slide .slide-item');
 
     if (carouselSlide && slideItems.length > 0) {
-        // Configurações básicas
         const gap = 20;
         const itemWidth = slideItems[0].offsetWidth + gap;
         const totalItems = slideItems.length;
         
-        // Clonar o primeiro item e adicionar ao final para o loop
         const firstItemClone = slideItems[0].cloneNode(true);
         carouselSlide.appendChild(firstItemClone);
         
-        // Variáveis de controle
         let position = 0;
         
-        // Função para mover o carrossel
         function moveCarousel() {
-            // Avançar para o próximo slide
             position++;
             
-            // Aplicar a transição
             carouselSlide.style.transition = 'transform 0.5s ease';
             carouselSlide.style.transform = `translateX(-${position * itemWidth}px)`;
             
-            // Resetar quando chegar ao final
             if (position >= totalItems) {
-                // Após a transição terminar, voltar para o início sem animação
                 setTimeout(() => {
                     carouselSlide.style.transition = 'none';
                     position = 0;
@@ -244,7 +275,6 @@ window.onload = function() {
             }
         }
         
-        // Iniciar o carrossel com intervalo
         setInterval(moveCarousel, 1500);
     };
     if (document.getElementById('features-case')) {
@@ -353,11 +383,21 @@ window.onload = function() {
                 <div class="row" id="container-ratings-row">
                     <div class="col" id="sombreamento-div">
                         <div class="rating-stars col">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
                         </div>
                         <div class="rating-title">
                             <h4>Amazing Product</h4>
@@ -380,11 +420,21 @@ window.onload = function() {
                     </div>
                     <div class="col" id="sombreamento-div">
                         <div class="rating-stars col">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
                         </div>
                         <div class="rating-title">
                             <h4>Top Notch Support</h4>
@@ -407,11 +457,21 @@ window.onload = function() {
                     </div>
                     <div class="col" id="sombreamento-div">
                         <div class="rating-stars col">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
-                            <img src="/assets/clients/star-fill.svg" alt="Estrela">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
                         </div>
                         <div class="rating-title">
                             <h4>Featured Costumer</h4>
@@ -433,7 +493,7 @@ window.onload = function() {
                         </div>
                     </div>
                 </div>
-              </div>
+            </div>
             `;
         };
         if (document.getElementById('feed')) {
@@ -453,16 +513,21 @@ window.onload = function() {
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-header fs-s d-flex justify-content-between align-items-center" id="feed-card-header">
                             <div class="d-flex align-items-center gap-2" id="feed-card-header">
-                                <img alt="calendario" src="/assets/Feed/calendar3.svg" style="width: 16px; height: 16px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                </svg>
                                 <p class="mb-0 small">20th March 2024</p>
                             </div>
                             <div class="d-flex align-items-center gap-2">
-                                <img alt="Balão de conversa" src="/assets/Feed/chat.svg" style="width: 16px; height: 16px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
+                                </svg>
                                 <p class="mb-0 small">10 comments</p>
                             </div>
                         </div>
@@ -474,16 +539,21 @@ window.onload = function() {
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-header fs-s d-flex justify-content-between align-items-center" id="feed-card-header">
                             <div class="d-flex align-items-center gap-2">
-                                <img alt="calendario" src="/assets/Feed/calendar3.svg" style="width: 16px; height: 16px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                </svg>
                                 <p class="mb-0 small">20th March 2024</p>
                             </div>
                             <div class="d-flex align-items-center gap-2">
-                                <img alt="Balão de conversa" src="/assets/Feed/chat.svg" style="width: 16px; height: 16px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
+                                </svg>
                                 <p class="mb-0 small">10 comments</p>
                             </div>
                         </div>
@@ -500,11 +570,16 @@ window.onload = function() {
                     <div class="card mb-4">
                         <div class="card-header fs-s d-flex justify-content-between align-items-center" id="feed-card-header">
                             <div class="d-flex align-items-center gap-2 ">
-                                <img alt="calendario" src="/assets/Feed/calendar3.svg" style="width: 16px; height: 16px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                </svg>
                                 <p class="mb-0 small">20th March 2024</p>
                             </div>
                             <div class="d-flex align-items-center gap-2">
-                                <img alt="Balão de conversa" src="/assets/Feed/chat.svg" style="width: 16px; height: 16px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
+                                </svg>
                                 <p class="mb-0 small">10 comments</p>
                             </div>
                         </div>
@@ -521,51 +596,61 @@ window.onload = function() {
         };
         if (document.getElementById('container-banner2')) {
             document.getElementById('container-banner2').innerHTML =`
-            <div class="row text-center w-100 justify-content-center g-4">
-                <div class="col-md-3 col-sm-6 px-5">
-                    <div class="card border border-secondary border-2 bg-transparent text-white py-5 px">
-                        <div class="d-flex justify-content-center align-items-center bg-primary rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                            <img src="./assets/Banner-dois/chat-dots.svg" alt="Balão de chat" style="width: 40%; height: 40%;">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title mb-0 display-2">280</h2>
-                            <p class="card-text small">Our Branchs</p>
-                        </div>
+        <div class="row text-center w-100 justify-content-center g-4">
+            <div class="col-md-3 col-sm-6 px-5">
+                <div class="card border border-secondary border-2 bg-transparent text-white py-5 px">
+                    
+                    <div class="d-flex justify-content-center align-items-center bg-primary rounded-circle mx-auto mb-3 cor-balao-banner2" style="width: 80px; height: 80px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                        <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>         
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 px-5 py-5">
-                    <div class="card border border-secondary border-2 bg-transparent text-white py-5">
-                        <div class="d-flex justify-content-center align-items-center bg-light rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                            <img src="./assets/Banner-dois/chat-dots.svg" alt="Balão de chat" style="width: 40%; height: 40%;">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title mb-0 display-2">782</h2>
-                            <p class="card-text small">Projects Done</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 px-5">
-                    <div class="card border border-secondary border-2 bg-transparent text-white py-5">
-                        <div class="d-flex justify-content-center align-items-center bg-danger rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                            <img src="./assets/Banner-dois/chat-dots.svg" alt="Balão de chat" style="width: 40%; height: 40%;" fill="white">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title mb-0 display-2">1M</h2>
-                            <p class="card-text small">Happy Users</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 px-5 py-5">
-                    <div class="card border border-secondary border-2 bg-transparent text-white py-5 px">
-                        <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
-                            <img src="./assets/Banner-dois/chat-dots.svg" alt="Balão de chat" style="width: 40%; height: 40%;">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title mb-0 display-2 ">100</h2>
-                            <p class="card-text small">Awards</p>
-                        </div>
+                    
+                    <div class="card-body">
+                        <h2 class="card-title mb-0 display-2">280</h2>
+                        <p class="card-text small">Our Branchs</p>
                     </div>
                 </div>
             </div>
+            <div class="col-md-3 col-sm-6 px-5 py-5">
+                <div class="card border border-secondary border-2 bg-transparent text-white py-5">
+                    <div class="d-flex justify-content-center align-items-center bg-light rounded-circle mx-auto mb-3 cor-balao-banner2-1" style="width: 80px; height: 80px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                        <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>          
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title mb-0 display-2">782</h2>
+                        <p class="card-text small">Projects Done</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 px-5">
+                <div class="card border border-secondary border-2 bg-transparent text-white py-5">
+                    <div class="d-flex justify-content-center align-items-center bg-danger rounded-circle mx-auto mb-3 cor-balao-banner2" style="width: 80px; height: 80px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                        <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>           
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title mb-0 display-2">1M</h2>
+                        <p class="card-text small">Happy Users</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 px-5 py-5">
+                <div class="card border border-secondary border-2 bg-transparent text-white py-5 px">
+                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle mx-auto mb-3 cor-balao-banner2" style="width: 80px; height: 80px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                        <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title mb-0 display-2 ">100</h2>
+                        <p class="card-text small">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
             `};
 };

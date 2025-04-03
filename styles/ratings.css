@@ -44,7 +44,7 @@
 .rating-name p {
     margin: 0;
     font-size: 14px;
-    color: #666;
+    color: black;
 }
 .rating-title h4 {
     margin-top: 15px;
@@ -52,4 +52,7 @@
 }
 .rating-text p {
     margin-bottom: 15px;
+}
+.rating-stars svg{
+    fill: yellow;
 }

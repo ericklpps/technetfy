@@ -1,5 +1,13 @@
 #container-banner2 {
-    background-color: #0e0650;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    background-color: darkblue;
+}
+.cor-balao-banner2 svg{
+    fill: white;
+    height: 40px;
+    width: 40px;
+}
+.cor-balao-banner2-1 svg{
+    fill: blue;
+    height: 40px;
+    width: 40px;
 }
