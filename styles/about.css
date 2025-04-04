@@ -1,13 +1,3 @@
-.destaque-texto-technology{
-    color: orangered;
-    text-decoration: none;
-}
-#aboutus{
-    width: 100%;
-    height: 150vh;
-    display: flex;
-    justify-content: space-around;
-}
 .texto-about-us{
     width: 45%;
     font-size: 17px;    
@@ -26,29 +16,17 @@
     }
 
 }
-.container-imagem-about-us{
-    width: 55%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    margin-top: 10vh;
+.w-75 {
+    width: 75% !important; 
 }
-.imagem-abus{
-    position: absolute;
-    width: 400px;
-    z-index: 1;
-    animation: subirDescer 3s infinite alternate;
-    border-radius: 7px;
-}
-.quadrado{
-    width: 430px;
-    transform: rotate(45deg);
+.w-80 {
+    width: 80% !important; 
 }
 @keyframes subirDescer {
     0% {
-      transform: translateY(0); 
+      transform: translateY(0);
     }
     100% {
-      transform: translateY(-50px); 
+      transform: translateY(-50px);
     }
-  }
+}
