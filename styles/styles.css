@@ -12,6 +12,7 @@
 @import url(/styles/banner2.css);
 @import url(/styles/footer.css);
 @import url(/styles/aboutus/aboutus.css);
+@import url(/styles/itservices/itservices.css);
 
 .subtitulo--imagem{
     display: flex;

@@ -1,7 +1,7 @@
 function criarHeader() {
   const headerHTML = `
     <header>
-      <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           
           <!-- Logo e título -->
@@ -47,7 +47,7 @@ function criarHeader() {
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-white" href="#">Service</a></li>
-              <li class="nav-item"><a class="nav-link text-white" href="#">IT Solution</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="itservices.html">IT Solution</a></li>
               <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
               <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
               <li class="nav-item ps-2">
