@@ -1,0 +1,11 @@
+.texto-laranja{
+    color: orangered;
+    text-decoration: none;
+}
+.img-sarah{
+    height: 650px;
+    width:480px
+}
+.svg-sarah svg{
+    fill: orangered;    
+}
