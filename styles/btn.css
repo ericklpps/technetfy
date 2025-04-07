@@ -38,7 +38,7 @@
     content: '';
     position: absolute;
     top: 0;
-    right: 0; /* Começa da direita em vez da esquerda */
+    right: 0; 
     width: 0%;
     height: 100%;
     background-color: #0e0650;

@@ -1,95 +1,95 @@
-window.onload = function() {
+window.onload = function () {
     if (document.getElementById('container-produtos')) {
         document.getElementById('container-produtos').innerHTML = `
-<section class="produtos-section py-5">
-    <div class="container">
-        <div class="produtos-header text-center mb-4">
-            <p class="produtos-header-subtitle fs-5 fw-bold mb-0">Services</p>
+   <section class="produtos-section py-3 py-md-5">
+    <div class="container-fluid container-md px-2">
+        <div class="produtos-header text-center mb-3 mb-md-4">
+            <p class="produtos-header-subtitle fs-6 fw-bold mb-0">Services</p>
             <hr class="produtos-header-divider">
-            <h2 class="produtos-header-title">Streamline Your Business with our IT Solutions</h2>
+            <h2 class="produtos-header-title h3 h2-md">Streamline Your Business with our IT Solutions</h2>
         </div>
 
-        <div class="row justify-content-center gy-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="produtos-card">
+        <div class="row justify-content-center g-3 g-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="produtos-card h-100 p-3">
                     <p class="produtos-card-arrow">&rarr;</p>
-                    <h4 class="produtos-card-title">Software Development</h4>
-                    <p class="produtos-card-description">
-                        We work closely with our clients to create software that meets their unique 
+                    <h4 class="produtos-card-title h5 h4-md">Software Development</h4>
+                    <p class="produtos-card-description small">
+                        We work closely with our clients to create software that meets their unique
                         business requirements. Our developers are skilled in a variety of programming languages and frameworks.
                     </p>
                     <div class="produtos-card-image-wrapper">
-                        <img class="produtos-card-image" src="/assets/orange-computer.png" alt="Software Development">
+                        <img class="produtos-card-image img-fluid" src="/assets/orange-computer.png" alt="Software Development">
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="produtos-card">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="produtos-card h-100 p-3">
                     <p class="produtos-card-arrow">&rarr;</p>
-                    <h4 class="produtos-card-title">IT Consulting</h4>
-                    <p class="produtos-card-description">
-                        Get expert advice and guidance on your IT strategy with our IT consulting services. 
+                    <h4 class="produtos-card-title h5 h4-md">IT Consulting</h4>
+                    <p class="produtos-card-description small">
+                        Get expert advice and guidance on your IT strategy with our IT consulting services.
                         We offer assessments, audits, and roadmaps to help you optimize your IT investments.
                     </p>
                     <div class="produtos-card-image-wrapper">
-                        <img class="produtos-card-image" src="/assets/aperto-de-mao.png" alt="IT Consulting">
+                        <img class="produtos-card-image img-fluid" src="/assets/aperto-de-mao.png" alt="IT Consulting">
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="produtos-card">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="produtos-card h-100 p-3">
                     <p class="produtos-card-arrow">&rarr;</p>
-                    <h4 class="produtos-card-title">Managed Services</h4>
-                    <p class="produtos-card-description">
-                        Take the hassle out of IT management with our managed services. We offer proactive 
+                    <h4 class="produtos-card-title h5 h4-md">Managed Services</h4>
+                    <p class="produtos-card-description small">
+                        Take the hassle out of IT management with our managed services. We offer proactive
                         monitoring, maintenance, and support for your IT systems.
                     </p>
                     <div class="produtos-card-image-wrapper">
-                        <img class="produtos-card-image" src="/assets/people-empng-removebg-preview.png" alt="Managed Services">
+                        <img class="produtos-card-image img-fluid" src="/assets/people-empng-removebg-preview.png" alt="Managed Services">
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="produtos-card">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="produtos-card h-100 p-3">
                     <p class="produtos-card-arrow">&rarr;</p>
-                    <h4 class="produtos-card-title">Cloud Services</h4>
-                    <p class="produtos-card-description">
-                        With our cloud services, you can securely store, manage, and access your business data from anywhere. 
+                    <h4 class="produtos-card-title h5 h4-md">Cloud Services</h4>
+                    <p class="produtos-card-description small">
+                        With our cloud services, you can securely store, manage, and access your business data from anywhere.
                         Our cloud solutions are scalable and customizable.
                     </p>
                     <div class="produtos-card-image-wrapper">
-                        <img class="produtos-card-image" src="/assets/cloud-empng-removebg-preview.png" alt="Cloud Services">
+                        <img class="produtos-card-image img-fluid" src="/assets/cloud-empng-removebg-preview.png" alt="Cloud Services">
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="produtos-card">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="produtos-card h-100 p-3">
                     <p class="produtos-card-arrow">&rarr;</p>
-                    <h4 class="produtos-card-title">Cybersecurity</h4>
-                    <p class="produtos-card-description">
-                        Protect your business against cyber threats with our comprehensive cybersecurity 
+                    <h4 class="produtos-card-title h5 h4-md">Cybersecurity</h4>
+                    <p class="produtos-card-description small">
+                        Protect your business against cyber threats with our comprehensive cybersecurity
                         solutions including threat detection, response, and training.
                     </p>
                     <div class="produtos-card-image-wrapper">
-                        <img class="produtos-card-image" src="/assets/shield-empng-removebg-preview.png" alt="Cybersecurity">
+                         <img class="produtos-card-image img-fluid" src="/assets/shield-empng-removebg-preview.png" alt="Cybersecurity">
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-                <div class="produtos-card">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="produtos-card h-100 p-3">
                     <p class="produtos-card-arrow">&rarr;</p>
-                    <h4 class="produtos-card-title">Network Solutions</h4>
-                    <p class="produtos-card-description">
-                        Our network solutions keep your business connected. From setting up your infrastructure 
-                        to providing reliable connectivity—we’ve got you covered.
+                    <h4 class="produtos-card-title h5 h4-md">Network Solutions</h4>
+                    <p class="produtos-card-description small">
+                        Our network solutions keep your business connected. From setting up your infrastructure
+                        to providing reliable connectivity—we've got you covered.
                     </p>
                     <div class="produtos-card-image-wrapper">
-                        <img class="produtos-card-image" src="/assets/cloud-empng-removebg-preview.png" alt="Network Solutions">
+                         <img class="produtos-card-image img-fluid" src="/assets/cloud-empng-removebg-preview.png" alt="Network Solutions">
                     </div>
                 </div>
             </div>
@@ -98,77 +98,94 @@ window.onload = function() {
 </section>
 
     `;
-        
+
     }
-    
+
     if (document.getElementById('servicos-container')) {
-        document.getElementById('servicos-container').innerHTML = `
-        <section class="container-servicos"> <!--Container-->
-            <div id="agrupamento" class="servicos"> <!--agrupamento dos 4 elementos-->
-            
-            <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
-                <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-shaded" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 14.933a1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
-                    </svg>          
-                    <h3>Security</h3>
-                <p>Keep your data secure with our top-of-the-line security features.</p>
-                </div>
-            </div> <!--Aqui acaba um elemento-->
-            
-            <!--Aqui inicia um novo elemento-->
-            <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
-                <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
-                        <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                <h3>Scalability</h3>
-                <p>As your business grows, so do your IT needs. Our solution is designed to scale with you </p>
-                </div>
-            </div> <!--Aqui acaba um elemento-->
-            
-            <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
-                <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                    </svg>
-                <h3>Reliability</h3>
-                <p>Downtime is not an option. Our solution is built to deliver maximum uptime and reliability</p>
-                </div>
-            </div> <!--Aqui acaba um elemento-->
-            
-            <div class="servicos-conteudo"><!--Area que o elemento vai ser exibida-->
-                <div id="elemento-individual" class="servico-item"> <!--informações do elemento-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                    </svg>
-                <h3>Ease of Use</h3>
-                <p>Our intuitive interface makes it easy to manage your IT infrastructure, even if you're not a tech expert.</p>
-                </div>
-            </div> <!--Aqui acaba um elemento-->
-            
-            </div>
-        </section>
+        document.getElementById('servicos-container').innerHTML = `        
+<section class="container-fluid container-md my-3 my-md-5 px-2">
+  <div class="row g-3 g-md-4 justify-content-center">
+
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card text-center service-card h-100 hover-effect">
+        <div class="icon-wrapper mx-auto my-2 my-md-3">
+          <!-- Ícone -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-shield-shaded" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 14.933a1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+          </svg>
+        </div>
+        <div class="card-body p-2 p-md-3">
+          <h5 class="card-title h6 h5-md">Security</h5>
+          <p class="card-text small">Keep your data secure with our top-of-the-line security features.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card text-center service-card h-100 hover-effect">
+        <div class="icon-wrapper mx-auto my-2 my-md-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
+            <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
+        <div class="card-body p-2 p-md-3">
+          <h5 class="card-title h6 h5-md">Scalability</h5>
+          <p class="card-text small">As your business grows, so do your IT needs. Our solution is designed to scale with you</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card text-center service-card h-100 hover-effect">
+        <div class="icon-wrapper mx-auto my-2 my-md-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+          </svg>
+        </div>
+        <div class="card-body p-2 p-md-3">
+          <h5 class="card-title h6 h5-md">Reliability</h5>
+          <p class="card-text small">Downtime is not an option. Our solution is built to deliver maximum uptime and reliability</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card text-center service-card h-100 hover-effect">
+        <div class="icon-wrapper mx-auto my-2 my-md-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+          </svg>
+        </div>
+        <div class="card-body p-2 p-md-3">
+          <h5 class="card-title h6 h5-md">Ease of Use</h5>
+          <p class="card-text small">Our intuitive interface makes it easy to manage your IT infrastructure, even if you're not a tech expert.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
         `;
     };
     if (document.getElementById('team')) {
-      document.getElementById('team').innerHTML =`
-        <div class="team-titulo">
+        document.getElementById('team').innerHTML = `
+    <div class="team-titulo">
             <p class="team-subtitulo">Team Member</p>
             <hr class="linha-produtos">
         <div>
             <h2>Meet Our Team</h2>  
         </div>            
         </div>
-        <div class="team-container row"> <!--width pré definido numa variavel global-->
-            <div class="team-card col">
+        <div class="team-container row">
+            <div class="team-card col-12 col-md-6 col-lg-3">
                 <div class="team-card-image container text-center">
                     <img src="assets/Team/team1.jpg" alt="Team Member 1" class="img-fluid">
                 </div>
-                <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <h3>John Smith</h3>
-                    <p class="team-card-info-cargo">Marketing Manager</p>
-                    <div class="team-card-social-icons container text-center ">
+                <div class="team-card-info container text-center shadow p-2 p-md-3 mb-3 mb-md-5 bg-body-tertiary rounded">
+                    <h3 class="h5 h4-md">John Smith</h3>
+                    <p class="team-card-info-cargo small">Marketing Manager</p>
+                    <div class="team-card-social-icons container text-center">
                         <div class="row">
                             <div class="col cor-svg-team">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -188,13 +205,13 @@ window.onload = function() {
                     </div>
                 </div>
             </div>
-            <div class="team-card col">
+            <div class="team-card col-12 col-md-6 col-lg-3">
                 <div class="team-card-image container text-center">
                     <img src="assets/Team/team2.jpg" alt="Team Member 2" class="img-fluid">
                 </div>
-                <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <h3>David Nguyen</h3>
-                    <p class="team-card-info-cargo">Software Engineer</p>
+                <div class="team-card-info container text-center shadow p-2 p-md-3 mb-3 mb-md-5 bg-body-tertiary rounded">
+                    <h3 class="h5 h4-md">David Nguyen</h3>
+                    <p class="team-card-info-cargo small">Software Engineer</p>
                     <div class="team-card-social-icons container text-center">
                         <div class="row">
                             <div class="col cor-svg-team">
@@ -215,13 +232,13 @@ window.onload = function() {
                     </div>
                 </div>
             </div>
-            <div class="team-card col">
+            <div class="team-card col-12 col-md-6 col-lg-3">
                 <div class="team-card-image container text-center">
-                    <img src="assets/Team/team3.jpg" alt="Team Member 2" class="img-fluid">
+                    <img src="assets/Team/team3.jpg" alt="Team Member 3" class="img-fluid">
                 </div>
-                <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <h3>Sarah Lee</h3>
-                    <p class="team-card-info-cargo">Product Designer</p>
+                <div class="team-card-info container text-center shadow p-2 p-md-3 mb-3 mb-md-5 bg-body-tertiary rounded">
+                    <h3 class="h5 h4-md">Sarah Lee</h3>
+                    <p class="team-card-info-cargo small">Product Designer</p>
                     <div class="team-card-social-icons container text-center">
                         <div class="row">
                             <div class="col cor-svg-team">
@@ -242,13 +259,13 @@ window.onload = function() {
                     </div>
                 </div>
             </div>
-            <div class="team-card col">
-                <div class="team-card-image container text-center ">
-                    <img src="assets/Team/team4.jpg" alt="Team Member 2" class="img-fluid">
+            <div class="team-card col-12 col-md-6 col-lg-3">
+                <div class="team-card-image container text-center">
+                    <img src="assets/Team/team4.jpg" alt="Team Member 3" class="img-fluid">
                 </div>
-                <div class="team-card-info container text-center shadow p-3 mb-5 bg-body-tertiary rounded">
-                    <h3>Emily Chen</h3>
-                    <p class="team-card-info-cargo">Customer Support Specialist</p>
+                <div class="team-card-info container text-center shadow p-2 p-md-3 mb-3 mb-md-5 bg-body-tertiary rounded">
+                    <h3 class="h5 h4-md">Emily Chen</h3>
+                    <p class="team-card-info-cargo small">Customer Support Specialist</p>
                     <div class="team-card-social-icons container text-center">
                         <div class="row">
                             <div class="col cor-svg-team">
@@ -280,18 +297,18 @@ window.onload = function() {
         const gap = 20;
         const itemWidth = slideItems[0].offsetWidth + gap;
         const totalItems = slideItems.length;
-        
+
         const firstItemClone = slideItems[0].cloneNode(true);
         carouselSlide.appendChild(firstItemClone);
-        
+
         let position = 0;
-        
+
         function moveCarousel() {
             position++;
-            
+
             carouselSlide.style.transition = 'transform 0.5s ease';
             carouselSlide.style.transform = `translateX(-${position * itemWidth}px)`;
-            
+
             if (position >= totalItems) {
                 setTimeout(() => {
                     carouselSlide.style.transition = 'none';
@@ -300,7 +317,7 @@ window.onload = function() {
                 }, 500);
             }
         }
-        
+
         setInterval(moveCarousel, 1500);
     };
     if (document.getElementById('features-case')) {
@@ -395,9 +412,9 @@ window.onload = function() {
                 </div>
             </div>
         `;
-        };
-        if (document.getElementById('container-clients')) {
-            document.getElementById('container-clients').innerHTML =`
+    };
+    if (document.getElementById('container-clients')) {
+        document.getElementById('container-clients').innerHTML = `
             <div class="team-titulo py-5">
                 <p class="team-subtitulo">Testimonial </p>
                 <hr class="linha-produtos">
@@ -521,9 +538,9 @@ window.onload = function() {
                 </div>
             </div>
             `;
-        };
-        if (document.getElementById('feed')) {
-            document.getElementById('feed').innerHTML =`
+    };
+    if (document.getElementById('feed')) {
+        document.getElementById('feed').innerHTML = `
             <div class="row mx-auto px-5">
                 <div class="col-12 px-3 py-5">
                     <div class="row justify-content-between align-items-center">
@@ -619,9 +636,9 @@ window.onload = function() {
                 </div>
             </div>
             `;
-        };
-        if (document.getElementById('container-banner2')) {
-            document.getElementById('container-banner2').innerHTML =`
+    };
+    if (document.getElementById('container-banner2')) {
+        document.getElementById('container-banner2').innerHTML = `
         <div class="row text-center w-100 justify-content-center g-4">
             <div class="col-md-3 col-sm-6 px-5">
                 <div class="card border border-secondary border-2 bg-transparent text-white py-5 px">
@@ -679,8 +696,8 @@ window.onload = function() {
             </div>
         </div>
             `};
-            if (document.getElementById('footer')) {
-                document.getElementById('footer').innerHTML = `
+    if (document.getElementById('footer')) {
+        document.getElementById('footer').innerHTML = `
                 <div class="container-fluid py-5 justify-content-around">
             <div class="row px-4 gx-5">
                 <div class="col-md-3 mb-4">
@@ -799,10 +816,10 @@ window.onload = function() {
         </div>
         `;
     };
-    
+
     if (document.getElementById('aboutus')) {
         document.getElementById('aboutus').innerHTML = `
-            <section class="container py-5 ">
+            <section class="container py-5">
                 <div class="container-fluid py-5">
                     <div class="row align-items-start justify-content-around">
                         <div class="col-md-6 d-flex align-items-start justify-content-center mt-5 mt-md-0 position-relative">
@@ -810,7 +827,7 @@ window.onload = function() {
                             <img src="assets/quadrado-animacao.png" alt="quadrado animado" class="w-80" style="transform: rotate(45deg);">
                         </div>
                         <div class="col-md-5 pe-md-3 texto-about-us ps-3">
-                            <p class="fs-5 fw-bold  mb-0" id="title">About Us</p>
+                            <p class="fs-5 fw-bold mb-0" id="title">About Us</p>
                             <hr class="linha-produtos">
                             <br>
                             <h2>Empowering Your Business with Innovative <strong class="text-danger text-decoration-none">Technology Solutions</strong></h2>
@@ -829,6 +846,7 @@ window.onload = function() {
                     </div>
                 </div>
             </section>
+
         `;
     };
 

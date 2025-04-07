@@ -1,32 +1,72 @@
-.texto-about-us{
-    width: 45%;
-    font-size: 17px;    
-
-    #title{
-        float: left;
-        color: #0e0650;
-    }
-    hr{
-        margin-top: 20px;
-        margin-right: 420px;
-        margin-left: 20px;
-        border-width: 3px;
-        border-radius: 7px;
-        background-color: orangered;
-    }
-
+.texto-about-us {
+    width: 100%; 
+    font-size: 17px;
 }
+
+#title {
+    float: left;
+    color: #0e0650;
+}
+
+.texto-about-us hr.linha-produtos {
+    margin-top: 20px;
+    margin-right: auto; 
+    margin-left: 20px;
+    width: 50px; 
+    border-width: 3px;
+    border-radius: 7px;
+    background-color: orangered;
+}
+
 .w-75 {
-    width: 75% !important; 
+    width: 75% !important;
 }
+
 .w-80 {
-    width: 80% !important; 
+    width: 80% !important;
 }
+
 @keyframes subirDescer {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     100% {
-      transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .texto-about-us h2 {
+        font-size: 1.75rem;
+    }
+    
+    .texto-about-us h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .texto-about-us {
+        padding: 15px;
+    }
+    
+    .position-absolute.w-75 {
+        position: relative !important;
+        margin-bottom: 30px;
+        max-width: 90%;
+    }
+    
+    .w-80 {
+        display: none; 
+    }
+}
+
+@media (max-width: 575.98px) {
+    .texto-about-us h2 {
+        font-size: 1.5rem;
+    }
+    
+    .texto-about-us h3 {
+        font-size: 1.1rem;
     }
 }

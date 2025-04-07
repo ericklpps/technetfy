@@ -4,18 +4,15 @@ function criarHeader() {
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           
-          <!-- Logo e título -->
           <a class="navbar-brand d-flex align-items-center" href="#">
             <img id="logo-header" src="assets/logo-header.png" class="img-fluid img--logo--header" alt="TechNetify Logo">
             <span id="titulo-logo" class="text-white ms-2">TechNetify</span>
           </a>
 
-          <!-- Botão de menu para dispositivos móveis -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Itens do menu -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
@@ -36,7 +33,7 @@ function criarHeader() {
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="about.html">About Us</a></li>
                   <li><a class="dropdown-item" href="#">Our Team</a></li>
-                  <li><a class="dropdown-item" href="teamdetail.html">Team Details</a></li>
+                  <li><a class="dropdown-item" href="#">Team Details</a></li>
                   <li><a class="dropdown-item" href="#">Whay Choose Us</a></li>
                   <li><a class="dropdown-item" href="#">Case Study</a></li>
                   <li><a class="dropdown-item" href="#">Case Study Details</a></li>
