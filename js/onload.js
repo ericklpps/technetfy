@@ -819,7 +819,7 @@ window.onload = function () {
 
     if (document.getElementById('aboutus')) {
         document.getElementById('aboutus').innerHTML = `
-        <section class="container py-5">
+          <section class="container py-5">
     <div class="row justify-content-between align-items-center">
         <!-- Coluna das imagens -->
         <div class="col-md-6 d-flex justify-content-center align-items-center position-relative">
@@ -831,6 +831,8 @@ window.onload = function () {
         <div class="col-md-5 texto-about-us">
             <p class="fs-5 fw-bold mb-0" id="title">About Us</p>
             <hr class="linha-produtos">
+            <br>
+            <br>
             <h2>Empowering Your Business with Innovative 
                 <strong class="text-danger text-decoration-none">Technology Solutions</strong>
             </h2>

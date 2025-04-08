@@ -10,7 +10,7 @@
 .texto-about-us hr.linha-produtos {
     margin-top: 20px;
     margin-left: 20px;
-    width: 50px; 
+    width: 50px;
     border-width: 3px;
     border-radius: 7px;
     background-color: orangered;
@@ -19,13 +19,14 @@
 .img-quadrado {
     width: 470px;
     transform: rotate(45deg);
+    z-index: 1;
 }
 
 .img-topo {
     position: absolute;
     width: 470px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     z-index: 2;
     animation: subirDescer 3s infinite alternate;
 }
@@ -36,5 +37,69 @@
     }
     100% {
         transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .img-quadrado {
+        display: none; 
+    }
+
+    .img-topo {
+        position: relative;
+        width: 100%;
+        animation: none; 
+        transform: none !important;
+    }
+
+    .texto-about-us {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .texto-about-us hr.linha-produtos {
+        margin: 10px auto;
+    }
+
+    .image-wrapper {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .img-quadrado {
+        display: none;
+    }
+
+    .img-topo {
+        position: relative;
+        width: 100%;
+        animation: none;
+        transform: none !important;
+    }
+
+    .texto-about-us {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .texto-about-us h2 {
+        font-size: 1.4rem;
+    }
+
+    .texto-about-us h3 {
+        font-size: 1rem;
+    }
+
+    .texto-about-us p {
+        font-size: 0.95rem;
+    }
+
+    .texto-about-us hr.linha-produtos {
+        margin: 10px auto;
+    }
+
+    .image-wrapper {
+        margin-bottom: 20px;
     }
 }
