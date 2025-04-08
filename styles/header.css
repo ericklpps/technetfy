@@ -1,20 +1,33 @@
 .navbar {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar.bg-primary {
+  background-color: darkblue !important;
+}
+
+.navbar.scrolled {
+  background-color: white !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled #titulo-logo {
+  color: black !important;
+}
+
+.navbar.menu-expanded {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
   }
   
-  .navbar.bg-primary {
-    background-color: darkblue !important; 
+  .navbar.scrolled .navbar-collapse {
+    background-color: white;
   }
-  
-  .navbar.scrolled {
-    background-color: white !important; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .navbar.scrolled .nav-link,
-  .navbar.scrolled #titulo-logo {
-    color: black !important;
-  }
-  
- 
-  
+}

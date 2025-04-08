@@ -819,33 +819,34 @@ window.onload = function () {
 
     if (document.getElementById('aboutus')) {
         document.getElementById('aboutus').innerHTML = `
-            <section class="container py-5">
-                <div class="container-fluid py-5">
-                    <div class="row align-items-start justify-content-around">
-                        <div class="col-md-6 d-flex align-items-start justify-content-center mt-5 mt-md-0 position-relative">
-                            <img src="assets/about.jpg" alt="Pessoas trabalhando" class="position-absolute w-75 rounded shadow-sm" style="z-index: 1; animation: subirDescer 3s infinite alternate;">
-                            <img src="assets/quadrado-animacao.png" alt="quadrado animado" class="w-80" style="transform: rotate(45deg);">
-                        </div>
-                        <div class="col-md-5 pe-md-3 texto-about-us ps-3">
-                            <p class="fs-5 fw-bold mb-0" id="title">About Us</p>
-                            <hr class="linha-produtos">
-                            <br>
-                            <h2>Empowering Your Business with Innovative <strong class="text-danger text-decoration-none">Technology Solutions</strong></h2>
-                            <h3>Expert IT Consulting, Software Development, Cloud Solutions, and More at TechNetify IT Solutions.</h3>
-                            <p>Welcome to TechNetify IT Solutions, your one-stop-shop for
-                            all your technology needs. We are a team of highly skilled and experienced IT professionals who
-                            are dedicated to delivering innovative and reliable solutions that meet the unique needs of your business.
-                            </p>
-                            <p>
-                            At TechNetify, we understand that technology is constantly evolving, and keeping up with the latest trends
-                            and advancements can be challenging. That's why we're here to help. Our team of experts stays up-to-date with the
-                            latest developments in the tech industry, so you can rest assured that you're getting the best possible advice and solutions.
-                            </p>
-                            <button type="button" class="btn btn-lg btn-primary" id="btn-banner">More Details &rarr;</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <section class="container py-5">
+    <div class="row justify-content-between align-items-center">
+        <!-- Coluna das imagens -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center position-relative">
+            <img src="assets/quadrado-animacao.png" alt="quadrado animado" class="img-quadrado">
+            <img src="assets/about.jpg" alt="Pessoas trabalhando" class="img-topo">
+        </div>
+
+        <!-- Coluna do texto -->
+        <div class="col-md-5 texto-about-us">
+            <p class="fs-5 fw-bold mb-0" id="title">About Us</p>
+            <hr class="linha-produtos">
+            <h2>Empowering Your Business with Innovative 
+                <strong class="text-danger text-decoration-none">Technology Solutions</strong>
+            </h2>
+            <h3>
+                Expert IT Consulting, Software Development, Cloud Solutions, and More at TechNetify IT Solutions.
+            </h3>
+            <p>
+                Welcome to TechNetify IT Solutions, your one-stop-shop for all your technology needs. We are a team of highly skilled and experienced IT professionals who are dedicated to delivering innovative and reliable solutions that meet the unique needs of your business.
+            </p>
+            <p>
+                At TechNetify, we understand that technology is constantly evolving, and keeping up with the latest trends and advancements can be challenging. That's why we're here to help. Our team of experts stays up-to-date with the latest developments in the tech industry, so you can rest assured that you're getting the best possible advice and solutions.
+            </p>
+            <button type="button" class="btn btn-lg btn-primary" id="btn-banner">More Details &rarr;</button>
+        </div>
+    </div>
+</section>
 
         `;
     };

@@ -87,4 +87,10 @@ document.addEventListener('DOMContentLoaded', function () {
       logo.src = "assets/logo-header.png"; 
     }
   });
+  
+  document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    if (window.scrollY <= 50) {
+      navbar.classList.toggle('menu-expanded');
+    }
+  });
 });
