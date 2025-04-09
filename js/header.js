@@ -33,7 +33,7 @@ function criarHeader() {
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="about.html">About Us</a></li>
                   <li><a class="dropdown-item" href="#">Our Team</a></li>
-                  <li><a class="dropdown-item" href="#">Team Details</a></li>
+                  <li><a class="dropdown-item" href="teamdetail.html">Team Details</a></li>
                   <li><a class="dropdown-item" href="#">Whay Choose Us</a></li>
                   <li><a class="dropdown-item" href="#">Case Study</a></li>
                   <li><a class="dropdown-item" href="#">Case Study Details</a></li>
